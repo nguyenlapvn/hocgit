@@ -1,0 +1,12 @@
+//show cau hinh git global
+git config --list
+
+git push origin "ten nhanh"
+git pull origin "ten nhanh"
+
+git log --pertty=oneline
+
+//Chuyen nhanh lam viec
+git checkout "ten nhanh"
+
+// Tao git tag
