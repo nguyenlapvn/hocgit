@@ -4,9 +4,41 @@ git config --list
 git push origin "ten nhanh"
 git pull origin "ten nhanh"
 
-git log --pertty=oneline
 
 //Chuyen nhanh lam viec
 git checkout "ten nhanh"
 
+//List danh sach tag
+git tag
+
 // Tao git tag
+git tag -a v1.0 -m "my version 1.4"
+
+// Tao tag lightweight
+git tag v1.4-lw
+
+// Xem du lieu cua 1 tag
+git show v1.4-lw
+
+// Xem lich su commit
+git log --pertty=oneline
+
+// Gan tag sau khi da di qua no lau roi
+git tag -a v0.1 9fceb02d0ae598e95dc970b74767f19372d61af8
+
+
+// Push 1 tag len kho
+git tag origin tentag
+git push origin v1.5
+
+// Push toan bo tag len kho
+git push origin --tags
+
+// Xoa 1 tag tai local
+git tag -d v1.1-lw
+
+// Xoa 1 tag tren kho tu xa
+git tag orign --delete <tagname>
+
+// Tach 1 tag sabg 1 nhanh moi
+git checkout -b version1 v1.0
